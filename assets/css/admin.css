@@ -1,0 +1,202 @@
+/* Payment Methods Table */
+.iftp-ff-methods-wrapper {
+    margin-top: 8px;
+}
+
+.iftp-ff-methods-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.iftp-ff-method-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: inherit;
+    font-size: 13px;
+    transition: background 0.15s;
+    cursor: pointer;
+}
+
+.iftp-ff-method-item:last-child {
+    border-bottom: none;
+}
+
+.iftp-ff-method-item--checked {
+    background: #f0f6ff;
+    color: #1a7efb;
+}
+
+.iftp-ff-method-item--disabled {
+    cursor: not-allowed;
+}
+
+/* Dim only the checkbox/icon/name portion of a disabled row, not the Activate button */
+.iftp-ff-method-item--disabled > label {
+    opacity: 0.55;
+}
+
+.iftp-ff-method-item .el-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    margin-right: 0;
+    font-size: 13px;
+    color: inherit;
+}
+
+.iftp-ff-method-item--checked .el-checkbox {
+    color: #1a7efb;
+}
+
+.iftp-ff-method-icon {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    flex-shrink: 0;
+}
+
+.iftp-ff-method-icon img {
+    max-width: 40px;
+    max-height: 24px;
+    object-fit: contain;
+}
+
+.iftp-ff-method-name {
+    flex: 1;
+    font-weight: 500;
+}
+
+.iftp-ff-method-account {
+    font-size: 11px;
+    color: #909399;
+    font-family: monospace;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.iftp-ff-method-item--checked .iftp-ff-method-account {
+    color: #1a7efb;
+}
+
+.iftp-ff-methods-empty,
+.iftp-ff-methods-loading {
+    margin: 0;
+    padding: 10px 14px;
+    color: #909399;
+    font-size: 13px;
+    background: #fafafa;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+}
+
+.iftp-ff-methods-loading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.iftp-ff-spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    border: 2px solid #dcdfe6;
+    border-top-color: #1a7efb;
+    border-radius: 50%;
+    animation: iftp-ff-spin 0.7s linear infinite;
+}
+
+@keyframes iftp-ff-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Default Method native select */
+.iftp-ff-default-select {
+    width: 100%;
+    height: 32px;
+    padding: 0 8px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: inherit;
+    background: #fff;
+    color: #606266;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.iftp-ff-default-select:focus {
+    border-color: #1a7efb;
+}
+
+/* Activate button (non-provisioned methods) */
+.iftp-ff-activate-btn {
+    margin-left: auto;
+    flex-shrink: 0;
+    font-size: 11px !important;
+    padding: 2px 8px !important;
+    height: auto !important;
+    line-height: 1.6 !important;
+    background: #fff !important;
+    border-color: #0073aa !important;
+    color: #0073aa !important;
+    cursor: pointer;
+}
+
+.iftp-ff-activate-btn:hover:not(:disabled) {
+    background: #0073aa !important;
+    color: #fff !important;
+}
+
+.iftp-ff-activate-btn:disabled,
+.iftp-ff-activate-btn--sent {
+    opacity: 0.65;
+    cursor: default;
+}
+
+.iftp-ff-activate-btn--sent {
+    background: #eaf6ea !important;
+    border-color: #46b450 !important;
+    color: #46b450 !important;
+}
+
+.iftp-ff-activate-error {
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    color: #d32f2f;
+}
+
+/* ifthenpay entry badge */
+.ff_badge_ifthenpay {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #f1f7fb;
+    border-color: #e3f0f9;
+    color: #00609c;
+}
+
+.ff_badge_ifthenpay img {
+    width: 54px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.ff_brand.ff_brand_ccard img {
+    height: 18px !important;
+}
+
+/* Backward compat: default badge containing ifthenpay gets brand treatment via JS class swap */

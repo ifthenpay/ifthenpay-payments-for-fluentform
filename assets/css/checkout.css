@@ -1,0 +1,100 @@
+/**
+ * ifthenpay inline payment box (frontend).
+ *
+ * Display-only counterpart to Stripe's `.ff_stripe_card_element`: the box carries
+ * `.ff-el-form-control` so it inherits Fluent Forms' field look (border, radius,
+ * padding, font, focus transition). We only add the flex layout needed to place
+ * the ifthenpay logo and the icons of the methods enabled on the form — no card
+ * input, since payment happens on the ifthenpay hosted page.
+ */
+
+.iftp-ff-inline {
+	margin-top: 10px;
+}
+
+/* Inherit sizing/border/radius from .ff-el-form-control; just lay out the contents. */
+.iftp-ff-inline-box.ff-el-form-control {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px 14px;
+	height: auto;
+	cursor: default;
+}
+
+.iftp-ff-inline-brand {
+	display: inline-flex;
+	align-items: center;
+	padding-right: 14px;
+	border-right: 1px solid var(--fluentform-border-color, #dcdfe6);
+	flex-shrink: 0;
+}
+
+.iftp-ff-inline-logo {
+	display: block;
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+}
+
+.iftp-ff-inline-methods {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	flex: 1;
+	min-width: 0;
+}
+
+.iftp-ff-inline-method {
+	display: inline-block;
+	width: auto;
+	max-width: 74px;
+	max-height: 24px;
+	object-fit: contain;
+	vertical-align: middle;
+}
+
+.iftp-ff-inline-method--text {
+	max-width: none;
+	padding: 2px 8px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.6;
+	color: #00609c;
+	background: #f1f7fb;
+	border: 1px solid #e3f0f9;
+	border-radius: var(--fluentform-border-radius, 3px);
+}
+
+.iftp-ff-inline-hint {
+	margin: 6px 0 0;
+	font-size: 12px;
+	font-style: italic;
+	color: var(--fluentform-secondary, #909399);
+}
+
+/* When the box has no method icons, drop the now-pointless divider. */
+.iftp-ff-inline-box--solo .iftp-ff-inline-brand {
+	padding-right: 0;
+	border-right: none;
+}
+
+/*
+ * Applied by checkout.js when it detects the box sits on a dark background
+ * (see applyTheme()). Only overrides the colors we hardcode above — the
+ * ifthenpay logo/method icons are swapped to their dark variants in JS.
+ */
+.iftp-ff-inline--dark .iftp-ff-inline-brand {
+	border-right-color: rgba(255, 255, 255, 0.2);
+}
+
+.iftp-ff-inline--dark .iftp-ff-inline-method--text {
+	color: #eaf6ff;
+	background: rgba(255, 255, 255, 0.08);
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.iftp-ff-inline--dark .iftp-ff-inline-hint {
+	color: rgba(255, 255, 255, 0.6);
+}
