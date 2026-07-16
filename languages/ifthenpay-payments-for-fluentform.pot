@@ -1,0 +1,348 @@
+# Copyright (C) 2026 ifthenpay-payments-for-fluentform
+# This file is distributed under the same license as the ifthenpay-payments-for-fluentform package.
+msgid ""
+msgstr ""
+"Project-Id-Version: ifthenpay-payments-for-fluentform 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ifthenpay-payments-for-fluentform\n"
+"POT-Creation-Date: 2026-07-06 15:08:37+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2026-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: src/Frontend/IfthenpayInline.php:50 src/Payment/IfthenpayHandler.php:129
+msgid "Pay with ifthenpay"
+msgstr ""
+
+#: src/Frontend/IfthenpayInline.php:86
+msgid "Available payment methods"
+msgstr ""
+
+#: src/Frontend/IfthenpayInline.php:108
+msgid "You will be securely redirected to ifthenpay to complete your payment."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:58
+msgid "Accept payments via ifthenpay Pay by Link directly through your Fluent Forms."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:91 src/Payment/IfthenpayHandler.php:62 src/Payment/IfthenpayHandler.php:122
+msgid "ifthenpay | Pay by Link"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:94 src/Payment/IfthenpayHandler.php:56
+msgid "Backoffice Key not connected"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:96
+msgid "Please connect your ifthenpay Backoffice Key in the integration settings before adding a feed to this form."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:97
+msgid "Configure ifthenpay"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:139 src/Integration/IfthenpayIntegration.php:140
+msgid "Feed Name"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:142
+msgid "A descriptive name for this payment feed."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:147
+msgid "Gateway Key"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:149
+msgid "Select the ifthenpay Pay by Link gateway for this form. The list is populated after you connect your Backoffice Key."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:155
+msgid "Payment Methods"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:157
+msgid "Enable the payment methods available on this gateway. Select a gateway key first to load them."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:162
+msgid "Default Payment Method"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:164
+msgid "Pre-select a method on the ifthenpay hosted page. Enabled methods in the table above are selectable; others are shown grayed out."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:169
+msgid "Payment Description"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:170
+msgid "e.g. Order #{id}"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:171
+msgid "Description shown on the ifthenpay hosted payment page. Use {id} for the submission ID."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:176
+msgid "Expiry Days"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:178
+msgid "Days before the payment link expires (0-9). Relevant for Multibanco references. Leave blank to use the gateway default."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:183
+msgid "Enable Feed"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:185
+msgid "Enable this feed"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:189
+msgid "Conditional Logics"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:190
+msgid "Run this feed conditionally based on form field values."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:192
+msgid "Enable conditional logic for this feed"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:244
+msgid "ifthenpay | Pay by Link Settings"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:245
+msgid "Connect your ifthenpay account to start accepting payments via Pay by Link."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:246
+msgid "Your Backoffice Key is connected."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:247
+msgid "Your Backoffice Key is not connected."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:248 src/Integration/IfthenpayIntegration.php:593
+msgid "Connect"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:252
+msgid "Enter your ifthenpay Backoffice Key in the format XXXX-XXXX-XXXX-XXXX.<br>You can find it in your ifthenpay backoffice account."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:253
+msgid "Backoffice Key"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:258
+msgid "Your ifthenpay Backoffice Key is active. Configure per-form payment options in the form Integrations tab."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:259 src/Integration/IfthenpayIntegration.php:594
+msgid "Disconnect"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:279 src/Integration/IfthenpayIntegration.php:446
+msgid "Backoffice Key disconnected."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:290
+msgid "Settings saved."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:301
+msgid "Invalid Backoffice Key"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:315
+msgid "No FluentForm context gateways found. Please ensure a Pay by Link gateway is configured for FluentForm in your ifthenpay backoffice."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:326
+msgid "Your Backoffice Key has been verified and connected."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:408 src/Integration/IfthenpayIntegration.php:440 src/Integration/IfthenpayIntegration.php:458 src/Integration/IfthenpayIntegration.php:501
+msgid "Insufficient permissions."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:415
+msgid "Invalid Context Backoffice Key."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:425
+msgid "No FluentForm context gateways found for this key. Please ensure you have a Pay by Link gateway configured for FluentForm in your ifthenpay backoffice."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:433
+msgid "Backoffice Key connected successfully."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:471 src/Integration/IfthenpayIntegration.php:597
+msgid "No payment methods found for this gateway."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:509
+msgid "Missing parameters."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:517
+msgid "An activation request was already sent for this method in the last 24 hours."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:541
+msgid "Activation request sent. ifthenpay support will contact you shortly."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:547
+msgid "Failed to send activation request. Please contact ifthenpay support directly."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:590
+msgid "Connecting..."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:591
+msgid "Disconnecting..."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:592
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:595
+msgid "Select a gateway key above to load available payment methods."
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:596
+msgid "Loading payment methods…"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:598 src/Integration/IfthenpayIntegration.php:895
+msgid "Activate"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:599
+msgid "Sending…"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:600
+msgid "Request sent!"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:658
+msgid "-- No gateway keys found --"
+msgstr ""
+
+#: src/Integration/IfthenpayIntegration.php:661
+msgid "-- Select a Gateway Key --"
+msgstr ""
+
+#: src/Payment/IfthenpayHandler.php:55
+msgid "Backoffice Key connected"
+msgstr ""
+
+#: src/Payment/IfthenpayHandler.php:58
+msgid "Configure in Integrations"
+msgstr ""
+
+#: src/Payment/IfthenpayHandler.php:69
+msgid "Connection Status"
+msgstr ""
+
+#: src/Payment/IfthenpayHandler.php:75
+msgid "Webhook URL"
+msgstr ""
+
+#: src/Payment/IfthenpayHandler.php:79
+msgid "Provide this URL to ifthenpay support to enable server-to-server payment confirmation."
+msgstr ""
+
+#: src/Payment/IfthenpayHandler.php:130
+msgid "Method Label"
+msgstr ""
+
+#: src/Payment/IfthenpayProcessor.php:84
+msgid "No ifthenpay gateway key configured for this form. Please add an ifthenpay integration feed."
+msgstr ""
+
+#: src/Payment/IfthenpayProcessor.php:177
+msgid "Redirect to ifthenpay"
+msgstr ""
+
+#: src/Payment/IfthenpayProcessor.php:178
+msgid "Customer redirected to ifthenpay hosted payment page."
+msgstr ""
+
+#: src/Payment/IfthenpayProcessor.php:188
+msgid "Redirecting to payment page…"
+msgstr ""
+
+#: src/Payment/IfthenpayProcessor.php:242
+msgid "Your payment was cancelled. Please try again."
+msgstr ""
+
+#: src/Payment/IfthenpayProcessor.php:264
+msgid "An error occurred with your payment. Please try again."
+msgstr ""
+
+#: src/Payment/IfthenpayProcessor.php:276
+msgid "Payment Pending"
+msgstr ""
+
+#: src/Payment/IfthenpayProcessor.php:283
+msgid "Your payment is being processed. You will receive a confirmation once the payment is completed."
+msgstr ""
+
+#: src/Payment/IfthenpayProcessor.php:408
+msgid "Payment Confirmed by ifthenpay"
+msgstr ""
+
+#. translators: 1: payment method code, 2: formatted amount
+
+#: src/Payment/IfthenpayProcessor.php:411
+msgid "Payment of %2$s received via %1$s."
+msgstr ""
+
+#. translators: 1: submission ID, 2: form title
+
+#: src/Payment/IfthenpayProcessor.php:515
+msgid "Order #%1$d — %2$s"
+msgstr ""
+
+#. translators: %d: submission ID
+
+#: src/Payment/IfthenpayProcessor.php:518
+msgid "Order #%d"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "ifthenpay | Payments for Fluent Forms"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://ifthenpay.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "ifthenpay Pay by Link integration for Fluent Forms."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ifthenpay"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://ifthenpay.com/"
+msgstr ""
+
